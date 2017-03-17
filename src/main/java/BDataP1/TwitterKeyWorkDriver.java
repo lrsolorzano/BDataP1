@@ -30,6 +30,7 @@ public class TwitterKeyWorkDriver {
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
+        
 
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
