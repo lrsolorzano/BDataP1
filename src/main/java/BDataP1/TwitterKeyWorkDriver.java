@@ -19,12 +19,12 @@ public class TwitterKeyWorkDriver {
         }
         Job job = new Job();
         job.setJarByClass(BDataP1.TwitterKeyWorkDriver.class);
-        job.setJobName("Count TweetsbyUsr");
+        job.setJobName("Count TweetsbyWord");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
-        job.setMapperClass(BDataP1.TwitterKeyWordMapper.class);
+        job.setMapperClass(TwitterKeyWordCountMapper.class);
         job.setReducerClass(BDataP1.TwitterKeyWorkReducer.class);
         //job.setCombinerClass(edu.uprm.cse.bigdata.mrsp02.TwitterReduceByScreenName.class);
 
