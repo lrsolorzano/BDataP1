@@ -18,7 +18,7 @@ public class TwitterKeyWorkDriver {
             System.exit(-1);
         }
         Job job = new Job();
-        job.setJarByClass(BDataP1.TwitterKeyWorkDriver.class);
+        job.setJarByClass(TwitterKeyWorkDriver.class);
         job.setJobName("Count TweetsbyWord");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));

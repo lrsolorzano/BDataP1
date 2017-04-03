@@ -74,7 +74,7 @@
     </dependencies>
 
     <build>
-        <finalName>mrsp03-${project.version}</finalName>
+        <finalName>BDataP1-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -97,7 +97,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>edu.uprm.cse.bigdata.mrsp03.TwitterKeyWorkDriver</mainClass>
+                                    <mainClass>BDataP1.TwitterKeyWorkDriver</mainClass>
                                 </transformer>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer">
                                 </transformer>
